@@ -1,0 +1,24 @@
+Package: morphemepiece.data
+Title: Data for Morpheme Tokenization
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Jonathan",
+           family = "Bratt",
+           role = c("aut", "cre"),
+           email = "jonathan.bratt@macmillan.com",
+           comment = c(ORCID = "0000-0003-2859-0076")),
+    person(given = "Jon",
+           family = "Harmon",
+           role = c("aut"),
+           email = "jonthegeek@gmail.com",
+           comment = c(ORCID = "0000-0003-4781-4346")),
+    person(given = "Bedford Freeman & Worth Pub Grp LLC DBA Macmillan Learning", 
+           role = c("cph"))
+    )
+Description: Provides data about morphemes, the smallest units of meaning in a 
+    language.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
