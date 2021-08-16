@@ -35,7 +35,15 @@ functions to load data used by {morphemepiece}.
 
 ``` r
 library(morphemepiece.data)
-# Functions don't exist yet.
+
+head(morphemepiece_vocab())
+#>  [PAD]  [UNK]  [CLS]  [SEP] [MASK]      ! 
+#>      0      1      2      3      4      5
+head(morphemepiece_lookup())
+#>            aatheist           aatheists               aback              abacks 
+#>       "a## atheist"   "a## atheist ##s"          "a## back"      "a## back ##s" 
+#>           abackward          abacterial 
+#>   "a## back ##ward" "a## bacteria ##al"
 ```
 
 ## Code of Conduct
