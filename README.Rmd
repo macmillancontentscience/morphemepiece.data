@@ -43,7 +43,9 @@ It contains two functions to load data used by {morphemepiece}.
 
 ```{r data-functions}
 library(morphemepiece.data)
-# Functions don't exist yet.
+
+head(morphemepiece_vocab())
+head(morphemepiece_lookup())
 ```
 
 ## Code of Conduct
