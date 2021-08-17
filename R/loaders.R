@@ -47,10 +47,23 @@ morphemepiece_lookup <- function() {
   )
 }
 
+#' Load an RDS from inst Dir
+#'
+#' @inheritParams .get_path
+#'
+#' @return The R object.
+#' @keywords internal
 .load_inst_rds <- function(filetype, n_tokens) {
   return(readRDS(.get_path(filetype, n_tokens)))
 }
 
+#' Generate the inst path
+#'
+#' @param filetype Character scalar; the type of file, like "lookup" or "vocab".
+#' @param n_tokens Integer scalar; The number of tokens used for that file.
+#'
+#' @return Character scalar; the path to the file.
+#' @keywords internal
 .get_path <- function(filetype, n_tokens) {
   return(
     system.file(
