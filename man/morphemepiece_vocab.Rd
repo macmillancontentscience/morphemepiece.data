@@ -10,10 +10,10 @@ morphemepiece_vocab()
 A morphemepiece_vocabulary.
 }
 \description{
-A morphemepiece vocabularly is a named integer vector with class
+A morphemepiece vocabulary is a named integer vector with class
 "morphemepiece_vocabulary". The names of the vector are the morphemes, and
-the values are the integer identifiers of those tokens. The vocabularly is
-0-indexed for compatability with Python implementations.
+the values are the integer identifiers of those tokens. The vocabulary is
+0-indexed for compatibility with Python implementations.
 }
 \examples{
 head(morphemepiece_vocab())

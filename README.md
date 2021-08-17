@@ -11,6 +11,10 @@ use in the
 [{morphemepiece}](https://github.com/macmillancontentscience/morphemepiece)
 tokenizer package.
 
+The data is compiled using the
+{[wikimorphemes](https://github.com/macmillancontentscience/wikimorphemes)}
+package.
+
 ## Installation
 
 You can install the released version of morphemepiece.data from
@@ -31,7 +35,8 @@ devtools::install_github("macmillancontentscience/morphemepiece.data")
 ## Example
 
 You likely won’t ever need to use this package directly. It contains two
-functions to load data used by {morphemepiece}.
+functions to load data used by
+{[morphemepiece](https://github.com/macmillancontentscience/morphemepiece)}.
 
 ``` r
 library(morphemepiece.data)

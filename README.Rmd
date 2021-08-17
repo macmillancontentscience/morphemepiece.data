@@ -20,6 +20,8 @@ knitr::opts_chunk$set(
 
 The goal of morphemepiece.data is to provide stable, versioned data for use in the [{morphemepiece}](https://github.com/macmillancontentscience/morphemepiece) tokenizer package.
 
+The data is compiled using the {[wikimorphemes](https://github.com/macmillancontentscience/wikimorphemes)} package.
+
 ## Installation
 
 You can install the released version of morphemepiece.data from [CRAN](https://CRAN.R-project.org) with:
@@ -39,7 +41,7 @@ devtools::install_github("macmillancontentscience/morphemepiece.data")
 ## Example
 
 You likely won't ever need to use this package directly. 
-It contains two functions to load data used by {morphemepiece}.
+It contains two functions to load data used by {[morphemepiece](https://github.com/macmillancontentscience/morphemepiece)}.
 
 ```{r data-functions}
 library(morphemepiece.data)

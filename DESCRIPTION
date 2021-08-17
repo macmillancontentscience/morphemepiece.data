@@ -17,7 +17,7 @@ Authors@R: c(
     )
 Description: Provides data about morphemes, the smallest units of meaning in a 
     language.
-License: GPL (>= 3)
+License: Apache License (>= 2)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
