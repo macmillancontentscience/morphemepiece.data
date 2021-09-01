@@ -6,8 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of morphemepiece.data is to provide stable, versioned data for
-use in the
+The goal of morphemepiece.data is to provide stable, versioned English
+morpheme data. This data can be used to tokenize words into morpheme
+pieces, such as is implemented in the
 [{morphemepiece}](https://github.com/macmillancontentscience/morphemepiece)
 tokenizer package.
 

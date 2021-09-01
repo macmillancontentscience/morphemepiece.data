@@ -1,6 +1,6 @@
 Package: morphemepiece.data
 Title: Data for Morpheme Tokenization
-Version: 0.0.1
+Version: 1.0.0
 Authors@R: c(
     person(given = "Jonathan",
            family = "Bratt",
