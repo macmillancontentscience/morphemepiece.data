@@ -22,8 +22,7 @@ You can install the released version of morphemepiece.data from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-# Not yet.
-#install.packages("morphemepiece.data")
+install.packages("morphemepiece.data")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
