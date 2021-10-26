@@ -12,16 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Creates a morphemepiece vocabulary and lookup table, given a processed
-# wiktionary dump and an existing wordpiece vocabulary.
-# Optionally, a word frequency table from some corpus can be given.
-#
-
 # Throughout this code, I've followed the "begin internal functions with '.'"
 # convention to indicate thoughts about eventual internal/exported functions.
-# For now these will remain just in the vignette, but we should slowly migrate
+# For now these will remain just in this file, but we should slowly migrate
 # them into the package (with refinement wherever we made some very specific
-# opinionated decisions).
+# opinionated decisions), probably.
 
 `%>%` <- magrittr::`%>%`
 .data <- rlang::.data
