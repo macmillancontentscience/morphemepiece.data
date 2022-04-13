@@ -1,4 +1,4 @@
-# morphemepiece.data 1.1.1
+# morphemepiece.data 1.2.0
 
 * Resaved vocab in character format for morphemepiece 1.2.1.
 
