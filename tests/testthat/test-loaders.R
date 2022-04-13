@@ -16,8 +16,12 @@ test_that("vocab works", {
   test_result <- morphemepiece_vocab()
 
   # Run a couple basic tests to help identify specific strangeness.
-  expect_s3_class(test_result, c("morphemepiece_vocabulary", "integer"))
-  expect_named(test_result)
+  expect_s3_class(
+    test_result,
+    c("morphemepiece_vocabulary", "character"),
+    exact = TRUE
+  )
+  expect_null(names(test_result))
 
   # This test will need to be updated if we change our rules for defining a
   # vocabulary, but otherwise it should be stable.
