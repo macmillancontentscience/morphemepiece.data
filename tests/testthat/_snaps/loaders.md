@@ -3,5 +3,5 @@
     Code
       head(test_result, 5)
     Output
-      [1] "[PAD]" "#"     "##"    "##a"   "##b"  
+      [1] "[PAD]"  "[UNK]"  "[CLS]"  "[SEP]"  "[MASK]"
 

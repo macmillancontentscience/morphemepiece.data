@@ -243,10 +243,10 @@ count_tokens <- function(unnested_lookup,
 
 .get_fancy_wp_tokens <- function(wp_vocab) {
   # exclude [unused]
-  is_fancy <- stringr::str_detect(names(wp_vocab), pattern = "[^a-z#]")
-  is_unused <- stringr::str_detect(names(wp_vocab), pattern = "\\[unused")
+  is_fancy <- stringr::str_detect(wp_vocab, pattern = "[^a-z#]")
+  is_unused <- stringr::str_detect(wp_vocab, pattern = "\\[unused")
   # note that this excludes tokens "#", "##"... add those back in
-  return(c(names(wp_vocab[is_fancy & !is_unused]), "#", "##"))
+  return(c(wp_vocab[is_fancy & !is_unused], "#", "##"))
 }
 
 .get_actual_wp_words <- function(full_lookup, wp_vocab) {
@@ -254,8 +254,8 @@ count_tokens <- function(unnested_lookup,
   clean_wik <- full_lookup %>%
     dplyr::filter(!stringr::str_detect(.data$word, "[^a-z]")) %>%
     dplyr::pull(.data$word)
-  in_wik <- names(wp_vocab) %in% clean_wik
-  return(names(wp_vocab[in_wik]))
+  in_wik <- wp_vocab %in% clean_wik
+  return(wp_vocab[in_wik])
 }
 
 .get_wp_proper_nouns <- function(full_lookup, wp_vocab) {
@@ -270,8 +270,8 @@ count_tokens <- function(unnested_lookup,
     dplyr::pull(.data$word) %>%
     tolower()
 
-  in_wik <- names(wp_vocab) %in% cap_words
-  return(names(wp_vocab[in_wik]))
+  in_wik <- wp_vocab %in% cap_words
+  return(wp_vocab[in_wik])
 }
 
 .make_lookup <- function(unnested_lookup, vocab) {
