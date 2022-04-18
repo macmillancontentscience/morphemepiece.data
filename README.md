@@ -42,13 +42,12 @@ functions to load data used by
 library(morphemepiece.data)
 
 head(morphemepiece_vocab())
-#>  [PAD]  [UNK]  [CLS]  [SEP] [MASK]      ! 
-#>      0      1      2      3      4      5
+#> [1] "[PAD]"  "[UNK]"  "[CLS]"  "[SEP]"  "[MASK]" "!"
 head(morphemepiece_lookup())
-#>            aatheist           aatheists               aback              abacks 
-#>       "a## atheist"   "a## atheist ##s"          "a## back"      "a## back ##s" 
-#>           abackward          abacterial 
-#>   "a## back ##ward" "a## bacteria ##al"
+#>           later           years            used           being          united 
+#>     "late ##er"      "year ##s"      "use ##ed"      "be ##ing"    "unite ##ed" 
+#>       including 
+#> "include ##ing"
 ```
 
 ## Code of Conduct
